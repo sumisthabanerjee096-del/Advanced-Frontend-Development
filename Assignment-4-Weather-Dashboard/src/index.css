@@ -1,0 +1,63 @@
+:root {
+  --sky-top: #16222a;
+  --sky-bottom: #3a6073;
+  --surface: rgba(255, 255, 255, 0.08);
+  --surface-solid: #1c2b33;
+  --ink: #f2f6f7;
+  --muted: #a9bcc4;
+  --accent: #ffb454;
+  --accent-soft: rgba(255, 180, 84, 0.15);
+  --border: rgba(255, 255, 255, 0.14);
+
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  --radius: 16px;
+  --transition-fast: 180ms ease;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(160deg, var(--sky-top) 0%, var(--sky-bottom) 100%);
+  color: var(--ink);
+  font-family: var(--font-body);
+}
+
+.app {
+  max-width: 460px;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 4rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  animation: rise 500ms ease both;
+}
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.app__title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.5rem;
+  letter-spacing: -0.01em;
+  margin: 0 0 0.4rem;
+}
+
+.app__subtitle {
+  color: var(--muted);
+  font-size: 0.92rem;
+  margin: 0 0 2rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
