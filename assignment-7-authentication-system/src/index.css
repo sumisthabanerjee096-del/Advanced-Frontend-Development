@@ -1,0 +1,32 @@
+:root {
+  --bg: #0b0d14;
+  --surface: rgba(255, 255, 255, 0.045);
+  --surface-solid: #12141c;
+  --ink: #eef0f4;
+  --muted: #8b91a1;
+  --accent: #6c5ce7;
+  --accent-soft: rgba(108, 92, 231, 0.15);
+  --border: rgba(255, 255, 255, 0.08);
+
+  --font-display: "Manrope", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  line-height: 1.55;
+}
+
+.shell { min-height: 100vh; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}

@@ -1,0 +1,59 @@
+.shell__nav {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+  padding: 1.1rem 2rem;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface-solid);
+}
+
+.shell__brand {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.15rem;
+  margin-right: auto;
+}
+
+.shell__links { display: flex; gap: 1.4rem; }
+
+.shell__links a {
+  color: var(--muted);
+  font-size: 0.9rem;
+  text-decoration: none;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: color 160ms ease, border-color 160ms ease;
+}
+
+.shell__links a.active,
+.shell__links a:hover {
+  color: var(--ink);
+  border-color: var(--accent);
+}
+
+.shell__user {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.shell__auth-btn {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 0.45rem 1rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.shell__content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2.5rem 2rem 4rem;
+}
+
+@media (max-width: 720px) {
+  .shell__nav { flex-wrap: wrap; gap: 1rem; }
+  .shell__links { gap: 1rem; }
+}

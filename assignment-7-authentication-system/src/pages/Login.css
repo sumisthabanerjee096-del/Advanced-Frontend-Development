@@ -1,0 +1,110 @@
+.login {
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+}
+
+.login__card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login__card h1 {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  margin: 0 0 0.3rem;
+}
+
+.login__subtitle {
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin: 0 0 1.3rem;
+}
+
+.login__field {
+  display: grid;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+}
+
+.login__field label {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.login__field input:not([type="checkbox"]) {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.6rem 0.8rem;
+  color: var(--ink);
+  font-size: 0.9rem;
+}
+
+.login__field input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.login__error {
+  color: #ff6b6b;
+  font-size: 0.78rem;
+}
+
+.login__strength {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 0.3rem;
+}
+
+.login__strength-bar {
+  flex: 1;
+  height: 5px;
+  background: var(--border);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.login__strength-bar span {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+  transition: width 200ms ease, background 200ms ease;
+}
+
+.login__strength--weak .login__strength-bar span { background: #ff6b6b; }
+.login__strength--medium .login__strength-bar span { background: #ffb454; }
+.login__strength--strong .login__strength-bar span { background: #4ade80; }
+
+.login__strength-label {
+  font-size: 0.78rem;
+  color: var(--muted);
+  min-width: 46px;
+}
+
+.login__remember {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 1.3rem;
+  cursor: pointer;
+}
+
+.login__card button[type="submit"] {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 0.65rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
