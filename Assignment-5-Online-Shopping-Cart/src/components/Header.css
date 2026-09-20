@@ -1,0 +1,37 @@
+.site-header {
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 2.5rem;
+}
+
+.site-header__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.6rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-header__brand {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  margin: 0;
+  letter-spacing: 0.01em;
+}
+
+.site-header__cart-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
+
+.site-header__cart-badge span {
+  color: var(--accent);
+  font-weight: 600;
+}
+

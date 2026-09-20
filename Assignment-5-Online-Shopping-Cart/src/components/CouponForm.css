@@ -1,0 +1,58 @@
+.coupon {
+  border-top: 1px solid var(--border);
+  padding: 1.1rem 0;
+}
+
+.coupon__form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.coupon__form input {
+  flex: 1;
+  padding: 0.5rem 0.7rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--ink);
+  font-size: 0.85rem;
+}
+
+.coupon__form input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.coupon__form button {
+  background: var(--accent-soft);
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  padding: 0.5rem 0.9rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.coupon__applied {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  background: var(--accent-soft);
+  padding: 0.55rem 0.8rem;
+  border-radius: 8px;
+}
+
+.coupon__applied button {
+  background: none;
+  border: none;
+  color: var(--muted);
+  font-size: 0.8rem;
+  text-decoration: underline;
+}
+
+.coupon__error {
+  color: var(--danger);
+  font-size: 0.8rem;
+  margin: 0.5rem 0 0;
+}
