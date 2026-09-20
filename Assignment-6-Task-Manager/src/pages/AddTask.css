@@ -1,0 +1,35 @@
+.add-task h1 { font-family: var(--font-display); margin: 0 0 1.5rem; }
+.add-task__form { display: grid; gap: 1.1rem; max-width: 480px; }
+.add-task__row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.add-task__field { display: grid; gap: 0.4rem; }
+.add-task__field label { font-size: 0.85rem; color: var(--muted); }
+
+.add-task__field input,
+.add-task__field select,
+.add-task__field textarea {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.6rem 0.8rem;
+  color: var(--ink);
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+
+.add-task__field input:focus,
+.add-task__field select:focus,
+.add-task__field textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.add-task__submit {
+  justify-self: start;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 0.65rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}

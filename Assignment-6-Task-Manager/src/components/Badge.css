@@ -1,0 +1,18 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.badge--priority-high { background: rgba(255,107,107,0.15); color: #ff6b6b; }
+.badge--priority-medium { background: rgba(255,180,84,0.15); color: #ffb454; }
+.badge--priority-low { background: rgba(139,145,161,0.15); color: #8b91a1; }
+
+.badge--status-raised { background: rgba(78,161,255,0.15); color: #4ea1ff; }
+.badge--status-pending { background: rgba(255,180,84,0.15); color: #ffb454; }
+.badge--status-closed { background: rgba(74,222,128,0.15); color: #4ade80; }

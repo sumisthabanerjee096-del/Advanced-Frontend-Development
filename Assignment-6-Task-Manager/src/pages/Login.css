@@ -1,0 +1,22 @@
+.login { display: flex; justify-content: center; padding-top: 3rem; }
+
+.login__card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 2rem;
+  max-width: 380px;
+  text-align: center;
+}
+
+.login__card h1 { font-family: var(--font-display); font-size: 1.3rem; margin: 0 0 0.7rem; }
+.login__card p { color: var(--muted); font-size: 0.9rem; margin: 0 0 1.5rem; }
+
+.login__card button {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.6rem;
+  border-radius: 8px;
+  font-weight: 600;
+}

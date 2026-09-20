@@ -1,0 +1,26 @@
+.dashboard h1 { font-family: var(--font-display); margin: 0 0 0.3rem; }
+.dashboard__subtitle { color: var(--muted); margin: 0 0 2rem; }
+
+.dashboard__stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.1rem;
+}
+
+.stat-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  border-top: 3px solid var(--accent);
+}
+
+.stat-card__value { font-family: var(--font-display); font-size: 2rem; font-weight: 700; }
+.stat-card__label { color: var(--muted); font-size: 0.85rem; }
+
+.stat-card--raised { border-top-color: #4ea1ff; }
+.stat-card--pending { border-top-color: #ffb454; }
+.stat-card--closed { border-top-color: #4ade80; }
