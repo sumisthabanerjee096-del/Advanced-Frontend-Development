@@ -1,0 +1,18 @@
+.footer {
+  border-top: 1px solid var(--border);
+  padding: 2.2rem 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.footer p { margin: 0; }
+.footer__links { display: flex; gap: 1.4rem; }
+.footer__links a { color: var(--muted); }
+.footer__links a:hover { color: var(--accent); }

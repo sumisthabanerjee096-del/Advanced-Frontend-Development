@@ -1,25 +1,25 @@
-import Navbar from "./components/Navbar";
-import Header from "./components/Header";
-import About from "./components/About";
-import Education from "./components/Education";
-import Skills from "./components/Skills";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-
-import "./App.css";
+import Navbar from './components/Navbar.jsx'
+import Header from './components/Header.jsx'
+import AboutMe from './components/AboutMe.jsx'
+import Education from './components/Education.jsx'
+import Skills from './components/Skills.jsx'
+import Contact from './components/Contact.jsx'
+import Footer from './components/Footer.jsx'
 
 function App() {
   return (
     <>
       <Navbar />
-      <Header />
-      <About />
-      <Education />
-      <Skills />
-      <Contact />
+      <main>
+        <Header />
+        <AboutMe />
+        <Education />
+        <Skills />
+        <Contact />
+      </main>
       <Footer />
     </>
-  );
+  )
 }
 
-export default App;
+export default App

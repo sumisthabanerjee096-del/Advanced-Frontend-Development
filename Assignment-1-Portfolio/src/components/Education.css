@@ -1,0 +1,47 @@
+.education h2 { font-size: 1.9rem; margin-bottom: 2.5rem; }
+
+.education__timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-left: 1px solid var(--border);
+}
+
+.education__item {
+  position: relative;
+  padding: 0 0 2.2rem 1.75rem;
+}
+
+.education__item::before {
+  content: '';
+  position: absolute;
+  left: -4.5px;
+  top: 6px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.education__period {
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+
+.education__item h3 {
+  font-size: 1.3rem;
+  margin: 0.35rem 0 0.2rem;
+}
+
+.education__place {
+  color: var(--ink);
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+.education__detail {
+  color: var(--muted);
+  font-size: 0.92rem;
+  margin: 0;
+}

@@ -1,0 +1,29 @@
+.skills h2 { font-size: 1.9rem; margin-bottom: 2.5rem; }
+.skills__groups { display: grid; gap: 2rem; }
+
+.skills__group h3 {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--muted);
+  margin-bottom: 0.9rem;
+}
+
+.skills__tags { display: flex; flex-wrap: wrap; gap: 0.7rem; }
+
+.skills__tag {
+  border: 1px solid var(--border);
+  color: var(--ink);
+  padding: 0.45rem 1rem;
+  border-radius: 2px;
+  font-size: 0.86rem;
+  transition: border-color var(--transition-fast), color var(--transition-fast), transform var(--transition-fast);
+}
+
+.skills__tag:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-2px);
+}
